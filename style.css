@@ -55,6 +55,11 @@ img {
 
 /* Navigation */
 
+.top-nav {
+    position: fixed;
+    width: 100%;
+}
+
 .top-nav ul {
     display: grid;
     grid-gap: 15px;
