@@ -201,6 +201,10 @@ img {
     padding-bottom: 1em;
 }
 
+.span-a {
+    color: rgb(78, 200, 204);
+}
+
 /* Gallery Section */
 .gallery {
     display: grid;
@@ -271,9 +275,7 @@ textarea {
 }
 
 [type="submit"]:hover {
-    background: var(--primary);
-    border: 2px solid;
-    color: var(--dark);
+    color: var(--white);
 }
 
 
