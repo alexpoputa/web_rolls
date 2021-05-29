@@ -5,7 +5,7 @@ WEB ROLLS
 Responsive Landing Page
 
 ### Built With
-HTLM5/CSS3
+HTLM/SCSS
 
 ### Authors
 Poputa Alexandru
