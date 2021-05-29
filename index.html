@@ -1,140 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="scss/styles.css">
     <title>WebRolls</title>
 </head>
 
+
 <body>
-    <div class="wrapper">
-        <!-- Navigation -->
-        <div class="container" id="home">
-            <nav class="top-nav">
-                <ul>
-                    <li>
-                        <a href="#home">Home</a>
-                    </li>
 
-                    <li>
-                        <a href="#info">About</a>
-                    </li>
+    <!-- Header
+    ====================== -->
 
+    <header>
 
-                    <li>
-                        <a href="#services">Services</a>
-                    </li>
+        <nav class="main-nav centered">            
+            <a class="logo"><span class="web-span">Web</span>Rolls</a>
+          
+            <ul class="nav-links">
+                <li><a class="active" href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
 
+    <div class="mobile-menu">
+        <button class="ham">
+            <span class="menuIcon material-icons">
+              menu
+            </span>
+            <span class="xIcon material-icons">
+              close
+            </span>
+          </button>
+          <ul class="menu">
+            <li><a class="menuLink" href="#home">Home</a></li>
+            <li><a class="menuLink" href="#about">About</a></li>
+            <li><a class="menuLink" href="#services">Services</a></li>
+            <li><a class="menuLink" href="#pricing">Pricing</a></li>
+            <li><a class="menuLink" href="#contact">Contact</a></li>
+          </ul>
+    </div>
 
-                    <li>
-                        <a href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </nav>
-            <div class="top-text">
-                <h1><span class="span-a">Web</span>Rollz</h1>
-                <p>Devoted to make your life easier.</p>
+    </header>
+    
+    <div class="banner" id="home">
+        <h1 class="banner-quote"><span class="web-span">Devoted</span> to make your life easier</h1>
+    </div>
+
+    <!-- About section
+    ===================== -->
+
+    <section class="about section-centered centered" id="about">
+
+        <h1 class="about-title section-title">About <span class="web-span">Us</span></h1>
+
+        <p class="about-info section-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est labore id inventore commodi temporibus ducimus vitae, repellat libero qui et aliquam cum nulla laboriosam repudiandae debitis eius? Asperiores, aliquid doloremque rerum quibusdam facilis quam voluptates similique sint sed culpa! Dolore neque quibusdam temporibus iure quia inventore itaque impedit voluptate error.</p>
+
+        <div class="break-line"></div>
+
+    </section>
+    
+    
+    <!-- Services section
+        ======================== -->
+        
+        <section class="services section-centered" id="services">
+            <div class="centered">
+                
+            <div class="services-info">
+                <h1 class="services-title section-title">Your <span class="web-span">Web</span> Maintenance</h1>
+                <p class="services-text">Let's become partners and we will do the work for you!</p>
+            </div>
+            
+            <div class="break-line"></div>
+                
+            <div class="container services-offers">
+                <div class="offer-box">
+                    <i class="fas fa-cog fa-4x"></i>
+                    <h4 class="offer-box-title">Improvement</h4>
+                    <p class="offer-box-desc">Creating the best product for you</p>
+                </div>
+                <div class="offer-box">
+                    <i class="fas fa-globe-europe fa-4x"></i>
+                    <h4 class="offer-box-title">Advertising</h4>
+                    <p class="offer-box-desc">Making sure that your business is growing.</p>
+                </div>
+                <div class="offer-box">
+                    <i class="fas fa-hands-helping fa-4x"></i>
+                    <h4 class="offer-box-title">Assist</h4>
+                    <p class="offer-box-desc">Having your back in hard times.</p>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Pricing section
+    ========================= -->
+
+    <section class="pricing section-centered centered" id="pricing">
+
+        <h1 class="pricing-title section-title">Pricing</h1>
+
+        <div class="break-line"></div>
+        
+        <div class="prices">
+            <div class="prices-box prices-box-one">
+                <h4 class="prices-box-title">Standard Membership</h4>
+                <p class="prices-box-cost">$199/month</p>
+                <a href="" class="prices-box-btn">Buy Now</a>
+            </div>
+            <div class="prices-box prices-box-two">
+                <h4 class="prices-box-title">Gold Membership</h4>
+                <p class="prices-box-cost">$299/2 months</p>
+                <a href="" class="prices-box-btn">Buy Now</a>
+            </div>
+            <div class="prices-box prices-box-three">
+                <h4 class="prices-box-title">Platinum Membership</h4>
+                <p class="prices-box-cost">$499/4 months</p>
+                <a href="" class="prices-box-btn">Buy Now</a>
             </div>
         </div>
+    </section>
 
+    <!-- Contact section
+    ======================= -->
 
-        <!-- Services Section -->
-        <section class="services" id="services">
-            <header class="showcase">
-                <h2>Your <span class="span-a">Web</span> Maintenance</h2>
-                <p>Let's become partners and we will do the work for you.</p>
-                <a href="javascript:void(0)" class="btn2">Read More</a>
-            </header>
-            <div class="price-boxes">
-                <div class="price-box price-box-one">
-                    <h4>Standard Membership</h4>
-                    <p class="price">$199/month</p>
-                    <a href="javascript:void(0)" class="btn">Buy Now</a>
-                </div>
-                <div class="price-box price-box-two">
-                    <h4>Gold Membership</h4>
-                    <p class="price">$299/2 months</p>
-                    <a href="javascript:void(0)" class="btn">Buy Now</a>
-                </div>
-                <div class="price-box price-box-three">
-                    <h4>Platinum Membership</h4>
-                    <p class="price">$499/6 months</p>
-                    <a href="javascript:void(0)" class="btn">Buy Now</a>
-                </div>
-            </div>
-        </section>
+    <section class="contact section-centered" id="contact">
 
-        <!-- Boxes Section -->
-        <section class="boxes">
-            <div class="box">
-                <i class="fas fa-cog fa-4x"></i>
-                <h3>Improvement</h3>
-                <p>Creating the best product for you.</p>
-            </div>
-            <div class="box">
-                <i class="fas fa-globe-europe fa-4x"></i>
-                <h3>Advertising</h3>
-                <p>Making sure that your business is growing.</p>
-            </div>
-            <div class="box">
-                <i class="fas fa-hands-helping fa-4x"></i>
-                <h3>Assist</h3>
-                <p>Having your back in hard times.</p>
-            </div>
-        </section>
+        <div class="centered">
+        
+            <div class="contact-title section-title"><span class="web-span">Contact</span> Us</div>
+        
+            <div class="contact-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam impedit assumenda natus cum incidunt dolore neque libero id laboriosam est, vel nam accusamus eum necessitatibus enim ratione ut! Quibusdam iure quos nostrum possimus reprehenderit officiis hic, dolores facere quia. Consequuntur.</div>
 
-        <!-- Info Section -->
-        <section class="info" id="info">
-            <img src="img/bg5.jpg" alt="" class="info-img">
-            <div class="info-txt">
-                <h2>Your Website And The Development Process</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quaerat sapiente neque delectus
-                    distinctio illo harum error consectetur incidunt inventore minima quae asperiores voluptate aliquid,
-                    saepe commodi, tempora laudantium. Voluptates!</p>
-                <a href="javascript:void(0)" class="btn">Read More</a>
-            </div>
-        </section>
+            <div class="break-line"></div>
 
-        <!-- Gallery Section -->
-        <section class="gallery">
-            <img src="https://source.unsplash.com/200x200/?computer" alt="">
-            <img src="https://source.unsplash.com/201x200/?computer" alt="">
-            <img src="https://source.unsplash.com/202x200/?computer" alt="">
-            <img src="https://source.unsplash.com/203x200/?computer" alt="">
-            <img src="https://source.unsplash.com/204x200/?computer" alt="">
-            <img src="https://source.unsplash.com/205x200/?computer" alt="">
-            <img src="https://source.unsplash.com/204x200/?computer" alt="">
-            <img src="https://source.unsplash.com/205x200/?computer" alt="">
-        </section>
+            <form action="#" class="contact-form">
+                <input type="text" id="user-name" class="contact-field" name="user-name" placeholder="John Doe" maxlength="50">
+                <input type="text" id="user-email" class="contact-field" name="user-email" placeholder="johndoe@gmail.com" maxlength="50">
+                <input type="text" id="user-subject" class="contact-field" name="user-subject" placeholder="Subject" maxlength="100">
+                <textarea class="contact-field contact-area" name="user-message" placeholder="Your message..." maxlength="200"></textarea>
+                <input type="submit" value="Send" class="contact-btn">
+            </form>
+        </div>
+    </section>
 
-        <!-- Contact Section -->
+    <!-- Footer
+    ============== -->
 
-        <section class="contact" id="contact">
-            <div class="contact-form">
-                <h2 id="top-title">Contact Us</h2>
-                <form>
-                    <input name="name" type="text" class="feedback-input" placeholder="Name" />
-                    <input name="email" type="text" class="feedback-input" placeholder="Email" />
-                    <textarea name="text" class="feedback-input" placeholder="Message"></textarea>
-                    <input type="submit" value="Submit" id="input-btn" />
-                </form>
-            </div>
-        </section>
+    <footer>
+        <p>Copyright © 2021 <span class="web-span">Web</span>Rolls</p>
+    </footer>
 
-        <!-- Footer Section -->
-        <footer>
-            <p><span class="span-a">Web</span>Rolls &copy; 2021</p>
-        </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="./js/main.js"></script>
 
-    </div>
-    <!-- Wrapper ends -->
-
-    <script src="main.js"></script>
 </body>
-
 </html>
