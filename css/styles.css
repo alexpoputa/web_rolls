@@ -169,7 +169,7 @@ header {
 /* Services
 ============ */
 .services {
-  background: url(/assets/services-bg.jpg);
+  background: url(../assets/services-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -276,7 +276,7 @@ header {
 /* Contact 
 ============= */
 .contact {
-  background: url(/assets/services-bg.jpg);
+  background: url(../assets/services-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
