@@ -10,7 +10,7 @@ setInterval(() => {
     if (num == 5){
         num = 1;   
     }
-    banner.style.backgroundImage = `url(../assets/banner-${num}.jpg)`;
+    banner.style.backgroundImage = `url(./../assets/banner-${num}.jpg)`;
 }, 7000);
 
 
