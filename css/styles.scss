@@ -63,7 +63,7 @@ body {
 =============== */
 
 body::-webkit-scrollbar {
-    width: 1em;
+    width: .9rem;
 }
 body::-webkit-scrollbar-track {
     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
@@ -86,6 +86,7 @@ header {
     opacity: .9;
     height: 6rem;
     width: 100%;
+    z-index: 4;
 }
 
 .main-nav {
@@ -143,23 +144,70 @@ header {
 }
 
 .banner {
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-image: url(../assets/banner-1.jpg);
-    -webkit-transition: background-image 1.7s linear;
-    -moz-transition: background-image 1.7s linear;
-    -ms-transition: background-image 1.7s linear;
-    transition: background-image 1.7s linear;
-    box-shadow:inset 0 0 0 2000px rgba(22,34,57,.5);
     height: 90vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 3;
+
+    .auto-slider {
+        position: relative;
+        box-sizing: content-box;
+        display: inline-block;
+        background: #fff;
+        margin: 0 auto;
+        overflow: hidden;
+        max-width: 100%;
+        height: 100%;
+
+        .slider-overlay {
+            position: absolute;
+            top:0;
+            left:0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(43, 51, 66, .3);
+            z-index: 2;
+        }
+
+        #slider {
+            overflow: hidden;
+            z-index: 1;
+
+            figure {
+                position: relative;
+                width: 400%;
+                margin: 0;
+                left: 0;
+                text-align: left;
+                font-size: 0;
+                animation: 30s sliding ease infinite;
+
+                img {
+                    width: 25%;
+                    height: fit-content;
+                    float: left;
+                    object-fit: cover;
+                    object-position: center;
+                }
+            }
+        }
+    
+        @keyframes sliding{
+            0%{left: 0%; }
+            25%{left: -100%;}
+            50%{left: -200%;}
+            75%{left: -300%;}
+            100%{left: 0%;}
+        }  
+
+    }
 
     .banner-quote {
+        position: absolute;
         font-size: 2.7rem;
         color: $white;
+        z-index: 4;
     }
 }
 
@@ -447,6 +495,24 @@ footer {
     .main-nav {
         display: none;
     }
+
+    .banner {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-image: url(../assets/banner-1.jpg);
+        box-shadow:inset 0 0 0 2000px rgba(43, 51, 66, 0.8);
+    
+        .auto-slider {
+            display: none;
+        }
+
+        .banner-quote {
+            z-index: 0;
+        }
+
+    }
+
 }
 
 @media (max-width: 680px) {

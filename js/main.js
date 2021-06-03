@@ -1,20 +1,4 @@
 
-// background interval change
-
-let banner = document.querySelector(".banner");
-let num = 1;
-
-
-setInterval(() => {
-    num++;
-    if (num == 5){
-        num = 1;   
-    }
-    banner.style.backgroundImage = `url(./assets/banner-${num}.jpg)`;
-}, 7000);
-
-
-
 // active nav links on scroll
 
 const onScroll = (event) => {
