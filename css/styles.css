@@ -596,6 +596,12 @@ footer {
   }
 }
 
+@media (max-width: 360px) {
+  .prices .prices-box * {
+    padding: 1.1em .7em;
+  }
+}
+
 /* Hamburger menu
 =============== */
 .ham {
